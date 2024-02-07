@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-dash
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kube-dash
+  template:
+    metadata:
+      labels:
+        app: kube-dash
+    spec:
+      containers:
+        - name: kube-dash
+          image: localhost:5000/kube-dash:latest
+          ports:
+            - containerPort: 80
