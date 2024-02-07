@@ -6,14 +6,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <div className='bg-green-500 font-bold tracking-widest p-2 rounded-lg'>
-          Hello
-        </div>
-        <div className='bg-green-500 font-bold tracking-widest p-2 rounded-lg m-2'>
-          Docker-Server
-        </div>
-        <div className='bg-green-500 font-bold tracking-widest p-2 rounded-lg'>
-          K8S
+        <div className='flex'>
+          <div className='bg-blue-600 p-2 rounded-md m-2'>
+            K8S
+          </div>
+          <div className='bg-orange-600 p-2 rounded-md m-2'>
+            ArgoCD
+          </div>
+          <div className='bg-blue-500 p-2 rounded-md m-2'>
+            React
+          </div>
         </div>
       </header>
     </div>
