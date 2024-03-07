@@ -5,6 +5,7 @@ import {
   SiReact,
   SiRust,
   SiPostgresql,
+  SiGrafana,
 } from "react-icons/si";
 export default function StackComponent() {
   const [address, setAddress] = useState("");
@@ -48,6 +49,15 @@ export default function StackComponent() {
             </div>
           </div>
         </a>
+        {/* <div className="m-4 mt-16">+</div>
+        <a href={`https://${address}:31113`} target="_blank" rel="noreferrer">
+          <div>
+            <SiGrafana size={128} className="m-2" color="#f05a28" />
+            <div className="bg-[#f05a28] p-2 rounded-md font-semibold tracking-wide shadow-md shadow-gray-900 animate hover:-translate-y-1 hover:bg-[rgba(237,129,14,0.75)] duration-200">
+              Grafana
+            </div>
+          </div>
+        </a> */}
 
         <div className="m-4 mt-16">+</div>
         <a href="#">
@@ -61,7 +71,7 @@ export default function StackComponent() {
 
         <div className="m-4 mt-16">+</div>
 
-        <a href={`https://${address}:30001`}>
+        <a href={`http://${address}:30001`}>
         <div>
           <SiRust
             size={128}
@@ -85,6 +95,16 @@ export default function StackComponent() {
           </div>
           {/* <div className="bg-[#336791] p-2 rounded-md font-semibold tracking-wide shadow-md shadow-gray-900 animate hover:-translate-y-1 hover:bg-[rgba(51,103,145,0.75)] duration-200">PosgreSQL</div> */}
         </div>
+
+        <div className="m-4 mt-16">+</div>
+        <a href={`https://${address}:31113`} target="_blank" rel="noreferrer">
+          <div>
+            <SiGrafana size={128} className="m-2" color="#f05a28" />
+            <div className="bg-[#f05a28] p-2 rounded-md font-semibold tracking-wide shadow-md shadow-gray-900 animate hover:-translate-y-1 hover:bg-[rgba(237,129,14,0.75)] duration-200">
+              Grafana
+            </div>
+          </div>
+        </a>
         {/* </a> */}
       </div>
     </>
